@@ -31,6 +31,7 @@
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.0, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.11.2, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v2.4.0.0, RVM: ruby-2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="power_assert (v0.2.6, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="powerpack (v0.1.1, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v2.0.5, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.3, RVM: ruby-2.3.3) [gem]" level="application" />
@@ -41,6 +42,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.8.1, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.1, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.4.4, RVM: ruby-2.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="test-unit (v3.1.5, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.3.0, RVM: ruby-2.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v2.1.0, RVM: ruby-2.3.3) [gem]" level="application" />
   </component>
