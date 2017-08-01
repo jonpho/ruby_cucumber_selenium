@@ -5,6 +5,10 @@ require 'test/unit'
 
 class HomePage
 
+  def initialize(driver)
+    @driver = driver
+  end
+
   def solutions_link
     @driver.find_element(:id, "menu-item-26")
   end

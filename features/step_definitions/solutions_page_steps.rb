@@ -4,8 +4,8 @@ require 'selenium-webdriver'
 require 'test/unit'
 # require '../pages/solutions_page'
 
-solutions_page = SolutionsPage.new
+# solutions_page = SolutionsPage.new(@driver)
 
 Given(/^I check that I am on the Solutions page$/) do
-  assert_equal solutions_page.expected_solutions_title, @driver.title
+  assert_equal @solutions_page.expected_solutions_title, @driver.title
 end
