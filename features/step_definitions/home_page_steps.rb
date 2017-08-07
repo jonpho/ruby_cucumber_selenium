@@ -1,10 +1,8 @@
-require 'capybara'
 require 'cucumber'
 require 'selenium-webdriver'
 require 'test/unit'
-# require '../pages/home_page'
 
-# home_page = HomePage.new(@driver)
+@home_page = HomePage.new(@driver, @custom_driver)
 
 Given(/^I navigate to TapQA$/) do
   @driver.get "http://www.tapqa.com"

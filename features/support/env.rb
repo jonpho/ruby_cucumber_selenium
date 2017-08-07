@@ -1,9 +1,31 @@
-require 'capybara/cucumber'
-require 'capybara'
 require 'selenium-webdriver'
 
-Capybara.default_driver = :selenium
+module EnvironmentSettings
 
-Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+  class << self
+
+    def browser(type)
+      case type
+      when 'chrome'
+        Selenium::WebDriver.for :chrome
+      when 'firefox'
+        Selenium::WebDriver.for :firefox
+      when 'safari'
+        Selenium::WebDriver.for :safari
+      else
+        puts 'Need to speicify what type of browser to test in.'
+      end
+    end
+
+  end
+
+end
+
+def logging(boolean)
+  case boolean
+    when true
+      Selenium::WebDriver.logger.level = :info
+    else
+      puts 'Logging Off'
+  end
 end
