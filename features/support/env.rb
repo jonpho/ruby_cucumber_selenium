@@ -1,7 +1,6 @@
 require 'selenium-webdriver'
 
 module EnvironmentSettings
-
   class << self
 
     def browser(type)
