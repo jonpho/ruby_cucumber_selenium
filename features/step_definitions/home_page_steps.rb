@@ -1,15 +1,16 @@
 require 'cucumber'
 require 'selenium-webdriver'
 require 'test/unit'
+require_relative '../../features/pages/home_page'
 
-@home_page = HomePage.new(@driver, @custom_driver)
+# @home_page = HomePage.new(@driver, @custom_driver)
 
 Given(/^I navigate to TapQA$/) do
   @driver.get "http://www.tapqa.com"
 end
 
 Given(/^I click on Solutions Menu$/) do
-  @home_page.solutions_link.click
+  @home_page.solutions_link_click
 end
 
 Given(/^I click on About Menu$/) do
@@ -27,4 +28,3 @@ end
 Given(/^I click on Contact Us Menu$/) do
   @home_page.contact_us_link.click
 end
-

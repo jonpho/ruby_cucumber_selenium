@@ -1,7 +1,8 @@
 require 'selenium-webdriver'
 require 'test/unit'
+require_relative '../support/driver_factory'
 
-class SolutionsPage
+class SolutionsPage < DriverFactory
   include Test::Unit::Assertions
 
   def initialize(driver, custom_driver)

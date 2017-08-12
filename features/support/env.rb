@@ -13,7 +13,7 @@ module EnvironmentSettings
       when 'safari'
         Selenium::WebDriver.for :safari
       else
-        puts 'Need to speicify what type of browser to test in.'
+        puts 'Need to specify what type of browser to test in.'
       end
     end
 
@@ -21,11 +21,15 @@ module EnvironmentSettings
 
 end
 
-def logging(boolean)
-  case boolean
+module Settings
+
+  def logger(boolean)
+    case boolean
     when true
       Selenium::WebDriver.logger.level = :info
     else
-      puts 'Logging Off'
+      puts 'Logger Off'
+    end
   end
+
 end

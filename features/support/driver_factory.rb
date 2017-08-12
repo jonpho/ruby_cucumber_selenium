@@ -11,4 +11,10 @@ class DriverFactory
     wait.until { web_element.displayed? }
   end
 
+
+  def click_link_with_explicit_wait(web_element)
+    explicit_wait(web_element)
+    web_element.click
+  end
+
 end

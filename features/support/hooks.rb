@@ -11,7 +11,7 @@ After do
   @driver.quit
 end
 
-# List the classes the need objects created for them here.
+# List the objects that need to be created for the page objects.
 
 def class_instantiation
   @custom_driver = DriverFactory.new(@driver)
