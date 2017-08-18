@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 require 'test/unit'
 require_relative '../../features/pages/home_page'
 
-# @home_page = HomePage.new(@driver, @custom_driver)
+@home_page = HomePage.new(@driver, @custom_driver)
 
 Given(/^I navigate to TapQA$/) do
   @driver.get "http://www.tapqa.com"
