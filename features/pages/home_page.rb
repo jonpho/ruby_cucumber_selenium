@@ -13,7 +13,7 @@ class HomePage < DriverFactory
   # WebElements Below
 
   def solutions_link
-    @driver.find_element(:id, 'menu-item-26')
+    @driver.find_element(:xpath, '//*[@id="menu-item-3880"]/a/span')
   end
 
   def about_link
