@@ -1,8 +1,9 @@
 require 'selenium-webdriver'
+require 'webdrivers'
 
 Before do
   @driver = EnvironmentSettings::browser('chrome')
-  @driver.manage.window.resize_to(1600, 1050)
+  # @driver.manage.window.resize_to(1600, 1050)
   @driver.manage.window.maximize
   class_instantiation
 end
