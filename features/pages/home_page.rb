@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require 'selenium-webdriver'
 require 'test/unit'
 require_relative '../support/driver_factory'
@@ -5,9 +6,9 @@ require_relative '../support/driver_factory'
 class HomePage < DriverFactory
   include Test::Unit::Assertions
 
-  def initialize(driver, customer_driver)
+  def initialize(driver, custom_driver)
     @driver = driver
-    @custom_driver = customer_driver
+    @custom_driver = custom_driver
   end
 
   # WebElements Below
