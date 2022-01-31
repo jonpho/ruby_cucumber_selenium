@@ -1,6 +1,12 @@
 ---
 url:
 button:
+  services_link:
+    id: 'menu-item-326'
+  about_link: 'menu-item-1861'
+  explore_link: 'menu-item-2830'
+  career_link: 'menu-item-22'
+  contact_us_link: 'menu-item-23'
 dropdowns:
 inputs:
 radio_buttons:

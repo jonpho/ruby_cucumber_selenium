@@ -1,21 +1,23 @@
+require 'dotenv'
+require 'report_builder'
 require 'selenium-webdriver'
 require 'webdrivers'
 
 Before do
-  @driver = EnvironmentSettings::browser('chrome')
+  Dotenv.load
+  @browser = Driver::browser('chrome')
   # @driver.manage.window.resize_to(1600, 1050)
-  @driver.manage.window.maximize
+  @browser.manage.window.maximize
   class_instantiation
 end
 
 After do
-  @driver.quit
+  @browser.quit
 end
 
 # List the objects that need to be created for the page objects.
 
 def class_instantiation
-  @custom_driver = DriverFactory.new(@driver)
-  @solutions_page = SolutionsPage.new(@driver, @custom_driver)
-  @home_page = HomePage.new(@driver, @custom_driver)
+  @driver = Driver.new(@browser)
+  @base_page = BasePage.new(@browser)
 end
